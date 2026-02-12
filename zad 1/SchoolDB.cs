@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace zad_1
 {
-    public partial class Form1 : Form
+    public partial class SchoolDB : Form
     {
         DatabaseHelper dbHelper = new DatabaseHelper();
-        public Form1()
+        public SchoolDB()
         {
             InitializeComponent();
         }

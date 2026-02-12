@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace zad_1
+namespace LibraryDB
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace zad_1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SchoolDB());
+            Application.Run(new Library());
         }
     }
 }

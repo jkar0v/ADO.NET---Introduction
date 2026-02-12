@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DC3042E8-1694-4356-9FDC-FA377C30C775}</ProjectGuid>
+    <ProjectGuid>{CEB9AAEB-9A8E-46BD-A761-5158E0097816}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>zad_1</RootNamespace>
-    <AssemblyName>zad 1</AssemblyName>
+    <RootNamespace>LibraryDB</RootNamespace>
+    <AssemblyName>LibraryDB</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,16 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseHelper.cs" />
-    <Compile Include="SchoolDB.cs">
+    <Compile Include="Library.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SchoolDB.Designer.cs">
-      <DependentUpon>SchoolDB.cs</DependentUpon>
+    <Compile Include="Library.Designer.cs">
+      <DependentUpon>Library.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="SchoolDB.resx">
-      <DependentUpon>SchoolDB.cs</DependentUpon>
+    <EmbeddedResource Include="Library.resx">
+      <DependentUpon>Library.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

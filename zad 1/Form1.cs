@@ -20,7 +20,17 @@ namespace zad_1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = dbHelper.getStudents();
+            int selectedOption = 0;
+
+            if (radioButton1.Checked)
+                selectedOption = 1;
+            else if (radioButton2.Checked)
+                selectedOption = 2;
+            else if (radioButton3.Checked)
+                selectedOption = 3;
+
+            dataGridView1.DataSource = dbHelper.getStudents(selectedOption);
         }
+
     }
 }

@@ -67,5 +67,32 @@ namespace zad_1
             return table;
         }
 
+        public (int totalBooks, int oldestYear) getStatistics()
+        {
+            int totalBooks = 0;
+            int oldestYear = 0;
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string query = "SELECT COUNT(*) AS TotalBooks, MIN(YearPublished) AS OldestYear FROM Books";
+
+                SqlCommand cmd = new SqlCommand(query, conn);
+                conn.Open();
+
+                SqlDataReader dr = cmd.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    totalBooks = Convert.ToInt32(dr["TotalBooks"]);
+                    oldestYear = Convert.ToInt32(dr["OldestYear"]);
+                }
+
+                dr.Close();
+            }
+
+            return (totalBooks, oldestYear);
+        }
+
+
     }
 }

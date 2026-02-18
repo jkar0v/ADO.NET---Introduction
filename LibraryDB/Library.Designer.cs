@@ -32,6 +32,8 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,11 +41,12 @@
             // 
             this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 46);
+            this.dataGridView1.Location = new System.Drawing.Point(52, 58);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(409, 292);
+            this.dataGridView1.Size = new System.Drawing.Size(460, 365);
             this.dataGridView1.TabIndex = 0;
             // 
             // comboBox1
@@ -55,17 +58,19 @@
             "Programming",
             "Thriller",
             "Education"});
-            this.comboBox1.Location = new System.Drawing.Point(508, 185);
+            this.comboBox1.Location = new System.Drawing.Point(572, 231);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(227, 24);
+            this.comboBox1.Size = new System.Drawing.Size(255, 28);
             this.comboBox1.TabIndex = 1;
             this.comboBox1.Text = "Изберете категория";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(144, 364);
+            this.button1.Location = new System.Drawing.Point(162, 455);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(192, 54);
+            this.button1.Size = new System.Drawing.Size(216, 68);
             this.button1.TabIndex = 2;
             this.button1.Text = "Покажи всички книги";
             this.button1.UseVisualStyleBackColor = true;
@@ -73,28 +78,53 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(550, 215);
+            this.button2.Location = new System.Drawing.Point(619, 269);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 48);
+            this.button2.Size = new System.Drawing.Size(165, 60);
             this.button2.TabIndex = 3;
             this.button2.Text = "Филтрирай по категория";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(663, 416);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 20);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "label1";
+            this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(663, 455);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(51, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label2";
+            this.label2.Visible = false;
+            // 
             // Library
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Library";
             this.Text = "Library";
             this.Load += new System.EventHandler(this.Library_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -104,6 +134,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 

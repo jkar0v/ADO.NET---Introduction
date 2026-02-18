@@ -23,6 +23,14 @@ namespace LibraryDB
         private void button1_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = dbHelper.getBooks();
+
+            var stats = dbHelper.getStatistics();
+
+            label1.Text = "Общо книги: " + stats.totalBooks;
+            label2.Text = "Най-стара година: " + stats.oldestYear;
+
+            label1.Visible = true;
+            label2.Visible = true;
         }
 
         private void Library_Load(object sender, EventArgs e)
